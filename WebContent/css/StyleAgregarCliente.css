@@ -1,0 +1,104 @@
+@charset "ISO-8859-1";
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-image: url("/TPINT_GRUPO_12_LAB4/imagenes/FONDO.jpg");
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0.5rem 1rem, rgba(255, 255, 255, 0.15) 0px -1px 0px inset;
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding-top: 100px;
+    flex: 1;
+    text-align: center;
+}
+
+#Usuario {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 400px;
+}
+
+.texto, .email, select.texto {
+    width: 100%;
+    border: 1px solid #60d8d2;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 40px; /* Aumenta la altura del campo */
+}
+
+h2 {
+    border-bottom: 2px solid;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #61caca6b;
+    border: none;
+    color: black;
+    margin-bottom: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+/* Estilo para el desplegable (select) */
+select.texto {
+    height: 40px; /* Asegura que el select tenga la misma altura que los campos de texto */
+    -webkit-appearance: none; /* Eliminar estilo predeterminado del navegador */
+    -moz-appearance: none;    /* Eliminar estilo predeterminado del navegador */
+    appearance: none;         /* Eliminar estilo predeterminado del navegador */
+    padding-right: 30px;      /* Espacio adicional para la flecha */
+}
+
+/* Estilo para el botón con hover */
+button:hover {
+    background-color: #4eb6b0; /* Un color de fondo diferente al pasar el ratón */
+    cursor: pointer;
+}
+
+/* Estilo para la flecha del desplegable */
+select.texto::-ms-expand {
+    display: none; /* Eliminar flecha en IE */
+}
+
+/* Asegura que el formulario ocupe todo el espacio disponible si es necesario */
+form {
+    width: 100%;
+}

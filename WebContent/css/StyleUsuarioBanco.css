@@ -1,0 +1,120 @@
+@charset "ISO-8859-1";
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("/TPINT_GRUPO_12_LAB4/imagenes/FONDO.jpg");
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0.5rem 1rem, rgba(255, 255, 255, 0.15) 0px -1px 0px inset;
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("/TPINT_GRUPO_12_LAB4/imagenes/banco.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 80px; /* Ajuste para evitar que el contenido se sobreponga al header */
+}
+
+.contenedor-encabezado {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.imagen-menu {
+    width: auto;
+    height: 100px;
+}
+
+.contenedor-links-menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 20px;
+    margin-top: revert;
+    align-items: center;
+}
+
+main {
+    padding-top: 100px;  /* Asegura que el contenido no quede debajo del header */
+    flex: 1;
+}
+
+.links-menu {
+    font-size: 20px;
+    padding: 0 18px;
+    color: papayawhip;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+.atributos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.atributos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.atributos td {
+    text-align: center;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.button {
+    width: 20%;
+    height: 30px;
+    background-color: #00ABE4;
+    cursor: pointer;
+    border: none;
+    color: black;
+    border-bottom: 1px solid;
+}
+
+.button2 {
+    width: 20%;
+    height: 30px;
+    background-color: #ff6666;
+    cursor: pointer;
+    border: none;
+    color: black;
+    border-bottom: 1px solid;
+    margin-left: 20px;
+}
+
+select {
+    width: 100%;
+    border: 1px solid #60d8d2;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
